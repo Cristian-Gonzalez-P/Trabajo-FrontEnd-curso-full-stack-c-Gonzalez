@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>TOUR-BOOKING</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <link rel="stylesheet" href="css/mdb.min.css" />
+  </head>
+  <body>
+   <!-- Nagbar-->
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">
+          <span class="align-middle"><img src="https://previews.123rf.com/images/mercuriohm/mercuriohm1012/mercuriohm101200006/8360902-silueta-de-un-avi%C3%B3n-sobre-un-fondo-negro.jpg" alt="Logo" width="30"></span>
+          <span class="align-middle"><em class="text-italic">TOUR BOOKING</em></span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Inicio.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Reservar.html">Reserva ahora</a>
+            </li>
+          </ul>
+          <form class="d-flex input-group w-auto">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Ingresa tu destino"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-primary btn-hover-primary text-white"
+              type="button"
+              data-mdb-ripple-color="dark"
+            >
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+    <style>
+    .btn-hover-primary:hover {
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+    }
+    </style>
+  <!-- Nagbar-->
+
+  <!-- Carrusel -->
+<div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://wallscloud.net/img/resize/1920/1080/MM/2016-10-26-caesars-palace-las-vegas-hotel-casino-09yy.jpg" class="d-block w-100" alt="Sunset Over the City"/>
+      <div class="carousel-caption d-none d-md-block text-shadow-dark text-center">
+        <h5 class="fw-bold text-wrap text-break">VIAJAR CON TOUR BOOKING ES MUY FÁCIL</h5>
+        <p class="fw-light text-wrap text-break">Busca entre nuestras opciones la que mejor se ajuste a la experiencia que deseas vivir.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://www.10wallpaper.com/wallpaper/1366x768/1303/maldives_ayada_hotel-beautiful_scenic_HD_wallpaper_1366x768.jpg" class="d-block w-100" alt="pisaje hotel 1"/>
+      <div class="carousel-caption d-none d-md-block text-shadow-dark text-center">
+        <h5 class="fw-bold text-wrap text-break">DA CLICK EN RESERVAR</h5>
+        <p class="fw-light text-wrap text-break">Despues de elegir tu destino, da click en el boton reserva e ingresa los datos solicitados.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://tntribune.com/wp-content/uploads/2016/09/The-Venetian-Resort-Hotel-Casino-in-Las-Vegas-Nevada-United-States-full-HD-Wallpaper-2560x1600-915x515.jpg" class="d-block w-100" alt="Cliff Above a Stormy Sea"/>
+      <div class="carousel-caption d-none d-md-block text-shadow-dark text-center">
+        <h5 class="fw-bold text-wrap text-break">¡Y LISTO!</h5>
+        <p class="fw-light text-wrap text-break">Alista las maletas y preparate para vivir una experiencia inolvidable.</p>
+        <a href="Reservar.html" class="btn btn-outline-light btn-lg mt-3 border-3 rounded-pill" onmouseover="this.classList.remove('btn-outline-light'); this.classList.add('btn-dark');" onmouseout="this.classList.remove('btn-dark'); this.classList.add('btn-outline-light');">Reservar ahora</a>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Carrusel -->
+
+<!--Footer-->
+<footer class="bg-dark text-white text-center text-lg-start">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Síguenos en redes sociales:</h5>
+
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+      </div>
+
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Contacto:</h5>
+
+        <p>
+          Teléfono: 1234567890
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Todos los derechos reservados | <a class="text-white" href="https://TourBooking.com/">TourBooking.com</a>
+  </div>
+</footer>
+<!--Footer-->
+
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript"></script>
+  </body>
+</html>

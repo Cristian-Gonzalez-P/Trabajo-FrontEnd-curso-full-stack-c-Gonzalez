@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>TOUR-BOOKING</title>
+  
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <link rel="stylesheet" href="css/mdb.min.css" />
+  </head>
+<body>
+    <!-- Nagbar-->
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">
+          <span class="align-middle"><img src="https://previews.123rf.com/images/mercuriohm/mercuriohm1012/mercuriohm101200006/8360902-silueta-de-un-avi%C3%B3n-sobre-un-fondo-negro.jpg" alt="Logo" width="30"></span>
+          <span class="align-middle"><em class="text-italic">TOUR BOOKING</em></span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Inicio.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Reservar.html">Reserva ahora</a>
+            </li>
+          </ul>
+          <form class="d-flex input-group w-auto">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Ingresa tu destino"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-primary btn-hover-primary text-white"
+              type="button"
+              data-mdb-ripple-color="dark"
+            >
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+    <style>
+    .btn-hover-primary:hover {
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+    }
+    </style>
+  <!-- Nagbar-->
+   <!-- Background -->
+   <div
+   class="p-5 text-center bg-image"
+   style="
+     background-image: url('https://thumbs.dreamstime.com/b/paisajes-de-yosemite-46208063.jpg');
+     height: 400px;
+   "
+ >
+   <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+     <div class="d-flex justify-content-center align-items-center h-100">
+       <div class="text-white">
+         <h1 class="mb-3 text-italic">FORMULARIO DE RESERVA</h1>
+         <h4 class="mb-3">Ingresa los datos que te solicitaremos a continuación</h4>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!-- Background-->
+<!-- Formulario-->
+ <div class="container">
+  <div class="row">
+    <div class="col-md-4 mx-auto">	
+      <div class="card border-primary">
+        <div class="card-body">
+          <form id="formulario">
+            <div class="form-outline mb-3">
+              <input type="text" id="nombre" class="form-control" name="nombre" required>
+              <label class="form-label" for="nombre">Nombre:</label>
+            </div>
+
+            <div class="form-outline mb-3">
+              <input type="text" id="apellidos" class="form-control" name="apellidos" required>
+              <label class="form-label" for="apellidos">Apellidos:</label>
+            </div>
+
+            <div class="form-outline mb-3">
+              <input type="text" id="tipo_documento" class="form-control" name="tipo_documento" required>
+              <label class="form-label" for="tipo_documento">Tipo de documento:</label>
+            </div>
+
+            <div class="form-outline mb-3">
+              <input type="tel" id="telefono" class="form-control" name="telefono" required>
+              <label class="form-label" for="telefono">Teléfono:</label>
+            </div>
+
+            <div class="form-outline mb-3">
+              <input type="email" id="correo" class="form-control" name="correo" required>
+              <label class="form-label" for="correo">Correo electrónico:</label>
+            </div>
+
+            <div class="form-outline mb-3">
+              <input type="text" id="direccion" class="form-control" name="direccion" required>
+              <label class="form-label" for="direccion">Dirección:</label>
+            </div>
+
+            
+        <label for="fecha_salida">Fecha de salida:</label>
+        <input type="date" id="fecha_salida" name="fecha_salida" required>
+      
+      
+        <label for="fecha_vuelta">Fecha de vuelta:</label>
+        <input type="date" id="fecha_vuelta" name="fecha_vuelta" required>
+      
+        <label for="destino">Destino:</label>
+        <select id="destino" name="destino" required>
+          <option value="" selected disabled>Seleccione una opción</option>
+          <option value="brasil">Brasil</option>
+          <option value="colombia">Colombia</option>
+          <option value="peru">Perú</option>
+          <option value="alemania">Alemania</option>
+          <option value="italia">Italia</option>
+          <option value="francia">Francia</option>
+          <option value="japon">Japón</option>
+          <option value="china">China</option>
+          <option value="tailandia">Tailandia</option>
+        </select>
+
+            <div class="d-grid gap-2 mt-4">
+              <button type="submit" id="reservar" class="btn btn-primary">Reservar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+<!-- Formulario-->
+<!--Footer-->
+<footer class="bg-dark text-white text-center text-lg-start">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Síguenos en redes sociales:</h5>
+  
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+        </div>
+  
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Contacto:</h5>
+  
+          <p>
+            Teléfono: 1234567890
+          </p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Todos los derechos reservados | <a class="text-white" href="https://TourBooking.com/">TourBooking.com</a>
+    </div>
+  </footer>
+  <!--Footer-->
+
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript"></script>
+
+</body>
+</html>
